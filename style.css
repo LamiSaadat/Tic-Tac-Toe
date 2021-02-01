@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee4e1;
+  font-family: 'Baloo Da 2', cursive;
+}
+#title {
+  font-size: 90px;
+  text-align: center;
+  font-family: 'Baloo Da 2', cursive;;
+}
+
+#pX, 
+#pO {
+  display: block;
+  height: auto;
+  width: 5em;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#pO {
+  float: right;
+  margin-right: 200px;
+  background-color: #ff9f1c;
+}
+
+#pX {
+  margin-left: 200px;
+  background-color: #2ec4b6;
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restart-btn {
+  font-family: 'Baloo Da 2', cursive;;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 3px 8px;
+  margin-top: 10px;
+}
+
+button:hover {
+  border: solid 5px black;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+#game-container {
+  display: grid;
+  grid-template-columns: 180px 180px 180px;
+  grid-template-rows: 180px 180px 180px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px; 
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.cell {
+  border: solid #d3d3d3 5px;
+  background-color: white;
+  font-size: 10rem;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: cornsilk;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
